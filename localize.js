@@ -1,7 +1,6 @@
 const https = require('https');
 const fs = require('fs');
 const Stream = require('stream').Transform;
-const sizeOf = require('image-size');
 const YAML = require('yaml');
 const outDir = './dist';
 const cfg = YAML.parse(fs.readFileSync('./config.yaml', 'utf8'));
