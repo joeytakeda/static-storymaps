@@ -1,0 +1,12 @@
+{
+  "name": "Static StoryMaps",
+  "version": "0.1.0",
+  "description": "Experimental library for self-hosting KnightLab StoryMaps"
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "image-size": "^0.9.7",
+    "yaml": "^1.10.2"
+  }
+}
