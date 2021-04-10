@@ -10,7 +10,7 @@
     "yaml": "^1.10.2"
   },
   "scripts": {
-    "cleanup": "rm -r public && mkdir public",
+    "cleanup": "rm -rf public && mkdir public",
     "move": "mv dist public && cp -r src public/src && cp -r index.html public/index.html",
     "localize": "node localize.js",
     "build": "npm run cleanup && npm run localize && npm run move",
