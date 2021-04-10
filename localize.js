@@ -50,7 +50,7 @@ function resolveImages(slides){
                 }
                 let url = obj[prop];
                 if (!(/^http/gi.test(url))) {
-                    url = 'http:' + url;
+                    url = 'https:' + url;
                 }
                 if (!imgs.hasOwnProperty(url) && /uploads\.knightlab/.test(url)) {
                     let dest = url.split('/').reverse()[0];
