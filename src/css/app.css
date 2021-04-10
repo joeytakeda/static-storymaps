@@ -1,9 +1,15 @@
 /* Custom overrides for Storymap */
 
+.vco-storymap {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
 :root{
     --slide-width: 33vw;
 
 }
+
+
 .vco-full-image-background .vco-text,
 .vco-full-color-background .vco-text,
 .vco-full-image-background .vco-text p,
@@ -19,7 +25,10 @@
 .vco-full-image-background .vco-text h3.vco-headline-date,
 .vco-full-color-background .vco-text h3.vco-headline-date,
 .vco-full-image-background .vco-text p h3.vco-headline-date,
-.vco-full-color-background .vco-text p h3.vco-headline-date {
+.vco-full-color-background .vco-text p h3.vco-headline-date,
+.vco-headline,
+.vco-headline-title,
+.vco-text{
     color: #fcfcfc !important;
 }
 .vco-full-image-background .vco-text .vco-headline-date small,
@@ -50,6 +59,15 @@
     padding: 0.67rem 1.25rem;
     background: rgba(0, 0, 0, .7);
     left: calc(100% - var(--slide-width) - var(--padding-right) - var(--padding-left));
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vco-slide .vco-slide-content-container .vco-slide-content > * {
+    flex: 0;
+    max-width: var(--slide-width)!important;
 }
 
 
@@ -57,6 +75,10 @@
     width: var(--slide-width);
     right:0;
     left:unset;
+    right: 0;
+    left: unset;
+    opacity: 1;
+}
 
 }
 
