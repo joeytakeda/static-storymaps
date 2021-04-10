@@ -1,5 +1,5 @@
 {
-  "name": "Static StoryMaps",
+  "name": "StaticStoryMaps",
   "version": "0.1.0",
   "description": "Experimental library for self-hosting KnightLab StoryMaps",
   "main": "index.js",
