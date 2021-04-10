@@ -10,14 +10,6 @@ const debug = false;
 
 function makeStoryMap(data){
     let slides = data.storymap.slides;
-    slides.forEach(slide => {
-        if (slide.hasOwnProperty('background')){
-            return;
-        }
-        slide.background = {
-            url: 'foo'
-        };
-    });
 
     if (debug){
         // Remove a few things...
