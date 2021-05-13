@@ -1,5 +1,7 @@
 name: Build StoryMap
-on: [push]
+on:
+  push:
+  workflow_dispatch:
 jobs:
   buildDocs:
     runs-on: ubuntu-latest
