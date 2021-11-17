@@ -1,0 +1,85 @@
+/* Custom overrides for Storymap */
+
+.vco-storymap {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+:root{
+    --slide-width: 33vw;
+
+}
+.vco-full-image-background .vco-text,
+.vco-full-color-background .vco-text,
+.vco-full-image-background .vco-text p,
+.vco-full-color-background .vco-text p,
+.vco-text p{
+    color: #fcfcfc !important;
+    text-shadow: 1px 1px 2px #000;
+}
+.vco-full-image-background .vco-text .vco-headline-date,
+.vco-full-color-background .vco-text .vco-headline-date,
+.vco-full-image-background .vco-text p .vco-headline-date,
+.vco-full-color-background .vco-text p .vco-headline-date,
+.vco-full-image-background .vco-text h3.vco-headline-date,
+.vco-full-color-background .vco-text h3.vco-headline-date,
+.vco-full-image-background .vco-text p h3.vco-headline-date,
+.vco-full-color-background .vco-text p h3.vco-headline-date,
+.vco-headline,
+.vco-headline-title,
+.vco-text{
+    color: #fcfcfc !important;
+}
+.vco-full-image-background .vco-text .vco-headline-date small,
+.vco-full-color-background .vco-text .vco-headline-date small,
+.vco-full-image-background .vco-text p .vco-headline-date small,
+.vco-full-color-background .vco-text p .vco-headline-date small,
+.vco-full-image-background .vco-text h3.vco-headline-date small,
+.vco-full-color-background .vco-text h3.vco-headline-date small,
+.vco-full-image-background .vco-text p h3.vco-headline-date small,
+.vco-full-color-background .vco-text p h3.vco-headline-date small {
+    color: #fcfcfc !important;
+}
+
+.vco-text-content,
+.vco-text-content *,
+.vco-storymap p{
+    font-size: 1.1rem;
+    line-height:1.4;
+}
+
+.vco-storymap:not(.vco-layout-portrait) .vco-slide-text-only .vco-slide-content-container .vco-slide-content .vco-text{
+    margin:0!important;
+}
+
+.vco-storymap:not(.vco-layout-portrait) .vco-slide .vco-slide-content-container .vco-slide-content {
+    padding: 0.67rem 1.25rem;
+    background: rgba(0, 0, 0, .7);
+    left: calc(100% - var(--slide-width) - var(--padding-right) - var(--padding-left));
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vco-storymap:not(.vco-layout-portrait) .vco-slide .vco-slide-content-container .vco-slide-content > * {
+    flex: 0;
+    max-width: var(--slide-width)!important;
+}
+
+
+.vco-storymap:not(.vco-layout-portrait) .vco-slide .vco-slide-background{
+    width: var(--slide-width);
+    right:0;
+    left:unset;
+    right: 0;
+    left: unset;
+    opacity: 1;
+}
+
+
+
+.vco-storymap:not(.vco-layout-portrait) .vco-slide-content > *{
+    width: var(--slide-width)!important;
+    position:relative;
+
+}
